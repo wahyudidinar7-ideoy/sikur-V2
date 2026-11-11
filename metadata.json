@@ -1,0 +1,6 @@
+{
+  "name": "SI-KURIKULUM TK CERIA",
+  "description": "Aplikasi Administrasi Kurikulum, Pembelajaran, Asesmen dan Raport untuk Taman Kanak-Kanak (Kurikulum Merdeka PAUD)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

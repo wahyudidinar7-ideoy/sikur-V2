@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Baloo 2", cursive, sans-serif;
+  --font-sans: "Nunito", sans-serif;
+}
+
+:root {
+  font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: "Baloo 2", cursive, sans-serif;
+}
+
+/* Subtle playful kindergarten background pattern */
+.bg-playful-pattern {
+  background-color: #FFFDF9;
+  background-image: 
+    radial-gradient(#10B981 0.75px, transparent 0.75px), 
+    radial-gradient(#FB923C 0.75px, #FFFDF9 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.15;
+}
+
+/* Print specific styles for printing official reports, RPPH, and KOSP */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+  }
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}
+
